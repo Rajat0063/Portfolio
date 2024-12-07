@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header-body {
+    height: 65vh;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/853/1023/682/apple-macbook-airbook-computer-mouse-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+
+
+.odd {
+    background-color: #f7f7f7;
+}
+
+.navbar {
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 8px;
+    font-size: 20px;
+}
+
+.navbar li a:hover {
+    color: lightgray;
+    border-bottom: 1px solid white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.myname {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding-top: 8rem;
+}
+
+.social-media {
+    margin-top: 1.2rem;
+}
+
+.social-media a i {
+    color: #fff;
+    margin: 0 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.social-media a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/* about section */
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.myimage {
+    height: 13rem;
+    width: 13rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+.myimage img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 3.5px 7.0px 7.0px hsl(0deg 0% 0% / 0.39);
+}
+
+#about p {
+    font-size: 18px;
+    margin: 2rem 8rem;
+    text-align: justify;
+}
+
+/* skills */
+
+#skills,
+#experience,
+#education,
+#portfolio,
+#contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #264a9e;
+}
+
+.progress-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 5rem 8rem 0 8rem;
+    /* Adjust the gap between progress bars */
+}
+
+.progress-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+    margin: 2rem 20rem;
+    /* Adjust the gap between progress bars */
+}
+
+.progress-bar {
+    flex: 1;
+    margin: 10px 0;
+    background-color: #c9c9c9;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    min-width: 150px;
+    /* Adjust the minimum width as needed */
+}
+
+.label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #fff;
+}
+
+.progress-fill {
+    height: 40px;
+    /* background: linear-gradient(to right, #4b6cb7, #182848); */
+    border-radius: 10px 0 0 10px;
+}
+
+/* Work Experience */
+#experience h1 span {
+    color: #264a9e;
+}
+
+.timeline {
+    position: relative;
+    width: 75%;
+    margin: 4rem 10rem;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n + 1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo>img {
+    width: 100%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433e3f;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74adc8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+/* Contact Form */
+
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
